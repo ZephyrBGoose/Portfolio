@@ -29,8 +29,22 @@ header {
 }
 
 nav {
-    background-color: var(--light-orange);
+    display: inline;
+}
+
+nav ul {
+    margin: 0 5rem;
+}
+
+nav ul li {
+    writing-mode: vertical-rl;
+text-orientation: upright;
+border: 0.25rem inset var(--light-pink);
+display: inline;
+background-color: var(--light-orange);
     color: var(--dark-orange);
+    rotate: -45deg;
+    margin: 0 5rem;
 }
 
 nav ul li, nav ul li a {
