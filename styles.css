@@ -1,0 +1,18 @@
+:root {
+    --light-orange: #f9d793;
+    --light-blue: #c5f6f6;
+    --light-green: #c9eab1;
+    --light-purple: #cfaed5;
+    --light-pink: #fecbdf;
+    /*dark colors*/
+    --dark-orange: #5B3F06;
+    --dark-blue: #115555;
+    --dark-green: #2B4D14;
+    --dark-purple: #3E2244;
+    --dark-pink: #840133;
+
+}
+
+img {
+    width: 15%;
+}
