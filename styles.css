@@ -13,6 +13,39 @@
 
 }
 
+header {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    height: 100vh;
+}
+
+nav {
+    background-color: var(--light-orange);
+    color: var(--dark-orange);
+}
+
+h1 {
+    color: var(--dark-green);
+    background-color: var(--light-green);
+}
+
 img {
     width: 15%;
 }
+
+#about {
+    background-color: var(--light-orange);
+}
+
+#certifications {
+    background-color: var(--light-purple);
+}
+
+#projects {
+    background-color: var(--light-pink);
+}
+
+footer {
+    background-color: var(--light-green);
+}
+/*orange purple pink green*/
