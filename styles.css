@@ -26,6 +26,8 @@ header {
     background-color: var(--light-blue);
     color: var(--dark-blue);
     height: 100vh;
+    background-image: linear-gradient(to bottom right, var(--light-blue) 50%, var(--light-green) 50%);
+    
 }
 
 nav {
@@ -53,8 +55,23 @@ nav ul li, nav ul li a {
 
 h1 {
     color: var(--dark-green);
-    background-color: var(--light-green);
-    font-size: 10rem;
+    font-size: 5rem;
+    text-align: right;
+    padding-right: 2rem;
+    position: relative;
+    top: -35vh;
+}
+
+#im {
+    font-size: 6rem;
+}
+
+#zephyr {
+    font-size: 8rem;
+}
+
+#goose {
+    font-size: 16rem;
 }
 
 h2 {
