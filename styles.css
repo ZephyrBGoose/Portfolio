@@ -10,7 +10,14 @@
     --dark-green: #2B4D14;
     --dark-purple: #3E2244;
     --dark-pink: #840133;
+    /*fonts*/
+    --normal: 'M PLUS 1 Code', monospace;
+    --hand-written-1: 'Indie Flower', cursive; 
+    --hand-written-2: 'Shadows Into Light', cursive;
+    --block-1: 'Ojuju', sans-serif;
+    --block-2: 'Josefin Sans', sans-serif;
     overflow-x: hidden;
+    margin: 0;
 
 }
 
@@ -34,6 +41,7 @@ header {
 nav {
     display: inline;
     position: absolute;
+    font-family: var(--block-1);
 }
 
 nav ul {
@@ -52,10 +60,14 @@ background-color: var(--light-orange);
     rotate: -45deg;
     margin: 0 5rem;
     position: relative;
+    padding: 0.25rem;
 }
 
 nav ul li, nav ul li a {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 #about-nav {
@@ -67,8 +79,6 @@ nav ul li, nav ul li a {
 #credentials-nav {
     rotate: 20deg;
     right: -38%;
-   
-    font-size: 1.75rem;
 }
 
 #projects-nav {
@@ -92,6 +102,9 @@ nav ul li, nav ul li a {
 .sun {
     height: 100vh;
     width: 100vw;
+    position: relative;
+    top: 5%;
+    right: 5%;
 }
 
 #sun-circle {
@@ -115,18 +128,25 @@ h1 {
     right: 3vw;
     width: 100vw;
     height: 100vh;
+    font-family: var(--hand-written-2);
 }
 
 #im {
     font-size: 6rem;
+    font-family: var(--block-1);
+    line-height: 0.75;
 }
 
 #zephyr {
     font-size: 8rem;
+    font-family: var(--block-2);
+    line-height: 1;
 }
 
 #goose {
     font-size: 16rem;
+    font-family: var(--hand-written-1);
+    line-height: 0.75;
 }
 
 h2 {
