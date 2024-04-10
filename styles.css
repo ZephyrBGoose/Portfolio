@@ -214,6 +214,38 @@ img {
     height: 50vh;
 }
 
+#credentials-block {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#credentials-block div {
+    width: 33%;
+    border: 0.5rem dashed var(--light-pink);
+    margin: 1rem;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: var(--block-1);
+    padding: 1rem;
+}
+
+#credentials-block ul {
+    list-style-type: none;
+}
+
+#credentials-block li {
+    font-size: 1rem;
+    font-family: var(--normal);
+    line-height: 1.5rem;
+}
+
 #projects {
     background-color: var(--light-pink);
     color: var(--dark-pink);
