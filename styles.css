@@ -33,25 +33,60 @@ header {
 
 nav {
     display: inline;
+    position: absolute;
 }
 
 nav ul {
     margin: 0 5rem;
+    height: 100vh;
 }
 
 nav ul li {
     writing-mode: vertical-rl;
 text-orientation: upright;
+letter-spacing: -0.4rem;
 border: 0.25rem inset var(--light-pink);
 display: inline;
 background-color: var(--light-orange);
     color: var(--dark-orange);
     rotate: -45deg;
     margin: 0 5rem;
+    position: relative;
 }
 
 nav ul li, nav ul li a {
     font-size: 2rem;
+}
+
+#about-nav {
+    rotate: 60deg;
+    right: -73%;
+    top: 12%;
+}
+
+#credentials-nav {
+    rotate: 20deg;
+    right: -38%;
+   
+    font-size: 1.75rem;
+}
+
+#projects-nav {
+    rotate: -25deg;
+    right: 2.5%;
+    top: 1%;
+}
+
+#resume-nav {
+    rotate: -60deg;
+    left: -35%;
+    top: 18%;
+}
+
+#contact-nav {
+    rotate: -110deg;
+    left: -58%;
+    top: 40%;
 }
 
 .sun {
@@ -65,8 +100,8 @@ nav ul li, nav ul li a {
     border-radius: 50%;
     z-index: 1;
     position: relative;
-    top: -22%;
-    left: 39%;
+    top: 35%;
+    left: 35%;
     background-image: linear-gradient(to bottom right, var(--light-orange) 50%, transparent 50%);
     rotate: 17.5deg;
 }
