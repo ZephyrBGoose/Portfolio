@@ -30,6 +30,8 @@
 }
 
 
+/*header*/
+
 header {
     background-color: var(--light-blue);
     color: var(--dark-blue);
@@ -71,32 +73,47 @@ nav ul li, nav ul li a {
 }
 
 #about-nav {
-    rotate: 60deg;
+    rotate: -120deg;
     right: -73%;
-    top: 12%;
+    top: 10%;
+    writing-mode: sideways;
+    text-orientation: initial;
+    letter-spacing: 0.5rem;
 }
 
 #credentials-nav {
-    rotate: 20deg;
+    rotate: -160deg;
     right: -38%;
+    writing-mode: sideways;
+    text-orientation: initial;
+    letter-spacing: 0.5rem;
 }
 
 #projects-nav {
     rotate: -25deg;
     right: 2.5%;
     top: 1%;
+    writing-mode: vertical-rl;
+text-orientation: upright;
+letter-spacing: -0.4rem;
 }
 
 #resume-nav {
     rotate: -60deg;
     left: -35%;
     top: 18%;
+    writing-mode: sideways;
+    text-orientation: initial;
+    letter-spacing: 0.5rem;
 }
 
 #contact-nav {
     rotate: -110deg;
     left: -58%;
     top: 40%;
+    writing-mode: sideways;
+text-orientation: initial;
+letter-spacing: 0.5rem;
 }
 
 .sun {
@@ -113,8 +130,8 @@ nav ul li, nav ul li a {
     border-radius: 50%;
     z-index: 1;
     position: relative;
-    top: 35%;
-    left: 35%;
+    top: 32%;
+    left: 37%;
     background-image: linear-gradient(to bottom right, var(--light-orange) 50%, transparent 50%);
     rotate: 17.5deg;
 }
@@ -149,33 +166,63 @@ h1 {
     line-height: 0.75;
 }
 
+/*main*/
+
+
+
 h2 {
     margin-top: 0;
     padding-top: 1.5rem;
     font-size: 3rem;
+    font-family: var(--hand-written-1);
+    text-align: center;
 }
 
 img {
-    width: 15%;
+    width: 12%;
 }
 
 #about {
     background-color: var(--light-orange);
+    color: var(--dark-orange);
     height: 50vh;
+}
+
+#about article {
+    display: flex;
+    
+}
+
+#about p {
+    width: 40%;
+    position: relative;
+    left: 25%;
+    font-family: var(--normal);
+    font-size: 1.5rem;
+}
+
+#about img {
+    position: relative;
+    left: 28%;
+    top: -20%;
+    border: 1rem dotted var(--light-purple);
 }
 
 #certifications {
     background-color: var(--light-purple);
+    color: var(--dark-purple);
     height: 50vh;
 }
 
 #projects {
     background-color: var(--light-pink);
+    color: var(--dark-pink);
     height: 75vh;
 }
 
 footer {
     background-color: var(--light-green);
+    color: var(--dark-green);
     height: 25vh;
 }
 /*orange purple pink green*/
