@@ -273,6 +273,15 @@ h3 {
     color: var(--light-orange);
 }
 
+#projects ul li a {
+    font-size: 2rem;
+    color: var(--light-orange);
+}
+
+#projects ul li a:visited {
+    color: var(--light-orange)
+}
+
 video {
     width: 100%;
 }
