@@ -252,6 +252,31 @@ h3 {
     height: 75vh;
 }
 
+#projects h2 {
+    font-size: 5rem;
+}
+
+#projects ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5rem;
+    height: 75%;
+}
+
+#projects ul li {
+    width: 33%;
+    font-size: 2rem;
+    text-align: center;
+    border: 1rem inset var(--light-orange);
+    background-color: var(--dark-orange);
+    color: var(--light-orange);
+}
+
+video {
+    width: 100%;
+}
+
 footer {
     background-color: var(--light-green);
     color: var(--dark-green);
