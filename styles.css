@@ -230,7 +230,7 @@ img {
     padding-bottom: 1rem;
 }
 
-h3 {
+#credentials-block h3 {
     font-size: 2rem;
     font-family: var(--block-1);
     padding: 1rem;
@@ -287,8 +287,68 @@ video {
 }
 
 footer {
-    background-color: var(--light-green);
+    background-color: var(--light-blue);
     color: var(--dark-green);
-    height: 25vh;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: var(--block-2);
 }
-/*orange purple pink green*/
+
+footer h2 {
+    padding-bottom: 1rem;
+}
+
+footer section {
+    width: 40%;
+    border: 1rem dashed var(--light-blue);
+    background-color: var(--light-green);
+    margin: 1rem 0;
+}
+
+footer section h3 {
+    font-size: 2.5rem;
+}
+
+.fa-brands {
+    font-size: 3rem;
+    margin:  1rem 2rem;
+    color: var(--dark-green);
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+.fa-brands:visited {
+    color: var(--dark-green);
+}
+
+#resume a {
+    justify-self: center;
+}
+
+#resume-thumbnail {
+    width: 15rem;
+    height: 8rem;
+    object-fit: cover;
+    object-position: 100% 0;
+    border: 0.2rem inset var(--light-blue)
+}
+
+
+figcaption {
+    margin-top: 0.5rem;
+    color: var(--dark-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+figcaption:hover {
+    color: white;
+}
+
+figcaption:visited {
+    color: var(--dark-green);
+}
