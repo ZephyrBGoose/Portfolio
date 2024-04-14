@@ -1,3 +1,5 @@
+//Projects section autoplay video controls
+
 const videos = document.querySelectorAll('.video');
 
 videos.forEach(video => {
@@ -10,3 +12,5 @@ videos.forEach(video => {
     video.currentTime = 0;
   });
 });
+
+
