@@ -206,6 +206,8 @@ img {
     left: 28%;
     top: -20%;
     border: 1rem dotted var(--light-purple);
+    border-radius: 50%;
+    padding: 0.25rem;
 }
 
 #certifications {
