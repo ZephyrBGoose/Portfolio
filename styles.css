@@ -37,6 +37,9 @@ header {
     color: var(--dark-blue);
     height: 100vh;
     background-image: linear-gradient(to bottom right, var(--light-blue) 50%, var(--light-green) 50%);
+    position: sticky;
+    z-index: -1;
+    top: 0;
     
 }
 
@@ -168,7 +171,15 @@ h1 {
 
 /*main*/
 
+article {
+    transform: translateX(400%) rotate(3turn);
+    transition: transform 0.4s ease;
+}
 
+
+.show {
+    transform: translateX(0%);
+}
 
 h2 {
     margin-top: 0;
