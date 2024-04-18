@@ -191,9 +191,6 @@ h2 {
     text-align: center;
 }
 
-img {
-    width: 12%;
-}
 
 #about {
     background-color: var(--light-orange);
@@ -212,17 +209,25 @@ img {
     left: 25%;
     font-family: var(--normal);
     font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
 
-#about img {
+#about figure {
+    width: 15%;
     position: relative;
     left: 28%;
     top: -20%;
+}
+
+#about img {
     border: 1rem dotted var(--light-purple);
     border-radius: 50%;
     padding: 0.25rem;
+    width: 100%;
 
 }
+
+/*about is good until tablet*/
 
 #certifications {
     background-color: var(--light-purple);
@@ -261,6 +266,8 @@ img {
     font-family: var(--normal);
     line-height: 1.5rem;
 }
+
+/*Certifications is good until tablet*/
 
 #projects {
     background-color: var(--light-pink);
@@ -302,6 +309,8 @@ video {
     width: 100%;
 }
 
+/*Projects is good until mobile*/
+
 footer {
     background-color: var(--light-blue);
     color: var(--dark-green);
@@ -324,7 +333,7 @@ footer section {
 }
 
 footer section h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .fa-brands {
@@ -368,3 +377,40 @@ figcaption:hover {
 figcaption:visited {
     color: var(--dark-green);
 }
+
+/*footer needs to change right and the end of laptop*/
+
+@media only screen and (max-width: 1024px) {
+    #about {
+        font-size: 1rem;
+    }
+
+    #certifications h3 {
+        font-size: 1.5rem;
+    }
+
+    #credentials-block {
+        width: auto;
+    }
+    #projects div{
+        box-sizing: border-box;
+        padding: 0.5rem;
+        align-self: space-evenly;
+    }
+    #projects ul li a {
+        font-size: 1.5rem;
+    }
+
+    footer h2{
+        padding-bottom: 0.5rem;
+    }
+
+    footer section h3{
+        font-size: 1.5rem;
+    }
+
+    footer figure {
+        padding-bottom: 0.5rem;
+    }
+}
+
