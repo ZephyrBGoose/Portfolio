@@ -1,16 +1,24 @@
+const doc = document.documentElement
+
 const documentHeight = () => {
-  const doc = document.documentElement
   doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
  }
  window.addEventListener('resize', documentHeight)
  documentHeight()
+
+
+ const documentWidth = () => {
+  doc.style.setProperty('--doc-width', `${window.innerWidth}px`)
+ }
+ window.addEventListener('resize', documentWidth)
+ documentWidth()
 
 // Scroll Animation
 
 const sections = document.querySelectorAll('article');
 
 function scrollAnimation() {
-  const triggerBottom = window.innerHeight / 5 * 3;
+  const triggerBottom = window.innerHeight / 5 * 4;
   sections.forEach(section => {
     const sectionTop = section.getBoundingClientRect().top;
     if(sectionTop < triggerBottom) {

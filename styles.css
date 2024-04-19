@@ -1,5 +1,6 @@
 :root {
     --doc-height: 100%;
+    --doc-width: 100%;
     /*light colors*/
     --light-orange: #f9d793;
     --light-blue: #c5f6f6;
@@ -42,6 +43,7 @@ header {
     position: sticky;
     z-index: -1;
     top: 0;
+    width: var(--doc-width);
     
 }
 
@@ -123,7 +125,7 @@ letter-spacing: 0.5rem;
 
 .sun {
     height: var(--doc-height);
-    width: 100vw;
+    width: var(--doc-width);
     position: relative;
     top: 5%;
     right: 5%;
@@ -148,7 +150,7 @@ h1 {
     position: relative;
     top: -80vh;
     right: 3vw;
-    width: 100vw;
+    width: var(--doc-width);
     height: var(--doc-height);
     font-family: var(--hand-written-2);
 }
@@ -172,6 +174,10 @@ h1 {
 }
 
 /*main*/
+
+main {
+    width: var(--doc-width);
+}
 
 article {
     transform: translateX(400%) rotate(3turn);
@@ -414,3 +420,86 @@ figcaption:visited {
     }
 }
 
+@media only screen and (max-width: 650px) {
+    #about {
+        font-size: 1rem;
+        height: var(--doc-height) * 2;
+    }
+
+    #about article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about p {
+        width: 80%;
+        left: 5%;
+        padding-bottom: 1rem;
+    }
+
+    #about figure {
+        top: 0;
+        left: 0;
+        width: 25%;
+    }
+
+    #about img {
+        border: 0.5rem dotted var(--light-purple);
+    }
+
+    #credentials {
+        height: var(--doc-height);
+    }
+
+    #credentials-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #credentials-block div {
+        width: 80%;
+    }
+
+    #projects h2 {
+        font-size: 3rem;
+    }
+
+    #projects article {
+        height: 100%;
+    }
+
+    #projects ul{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    #projects ul li {
+        width: 80%;
+        margin: 5%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        width: 80%;
+    }
+
+    footer section h3 span::after{
+        content: "\a";
+        white-space: pre;
+    }
+
+    footer figure {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #resume-thumbnail {
+        width: 80%;
+    }
+}
