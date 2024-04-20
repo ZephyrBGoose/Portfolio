@@ -35,7 +35,7 @@
 
 /*header*/
 
-header {
+.welcome {
     background-color: var(--light-blue);
     color: var(--dark-blue);
     height: var(--doc-height);
@@ -48,107 +48,54 @@ header {
 }
 
 nav {
-    display: inline;
-    position: absolute;
     font-family: var(--block-1);
 }
 
-nav ul {
-    margin: 0 5rem;
-    height: var(--doc-height);
-}
-
-nav ul li {
-    writing-mode: vertical-rl;
-text-orientation: upright;
-letter-spacing: -0.4rem;
-border: 0.25rem inset var(--light-pink);
-display: inline;
-background-color: var(--light-orange);
-    color: var(--dark-orange);
-    rotate: -45deg;
-    margin: 0 5rem;
-    position: relative;
-    padding: 0.25rem;
-}
-
-nav ul li, nav ul li a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-#about-nav {
-    rotate: -120deg;
-    right: -73%;
-    top: 10%;
-    writing-mode: sideways;
-    text-orientation: initial;
-    letter-spacing: 0.5rem;
-}
-
-#credentials-nav {
-    rotate: -160deg;
-    right: -38%;
-    writing-mode: sideways;
-    text-orientation: initial;
-    letter-spacing: 0.5rem;
-}
-
-#projects-nav {
-    rotate: -25deg;
-    right: 2.5%;
-    top: 1%;
-    writing-mode: vertical-rl;
-text-orientation: upright;
-letter-spacing: -0.4rem;
-}
-
-#resume-nav {
-    rotate: -60deg;
-    left: -35%;
-    top: 18%;
-    writing-mode: sideways;
-    text-orientation: initial;
-    letter-spacing: 0.5rem;
-}
-
-#contact-nav {
-    rotate: -110deg;
-    left: -58%;
-    top: 40%;
-    writing-mode: sideways;
-text-orientation: initial;
-letter-spacing: 0.5rem;
-}
-
-.sun {
-    height: var(--doc-height);
-    width: var(--doc-width);
-    position: relative;
-    top: 5%;
-    right: 5%;
-}
-
-#sun-circle {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
+.nav-button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .portfolio-nav {
+    position: fixed;
+    top: 1rem;
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .drop-down {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    position: relative;
-    top: 32%;
-    left: 37%;
-    background-image: linear-gradient(to bottom right, var(--light-orange) 50%, transparent 50%);
-    rotate: 17.5deg;
-}
+  }
+  
+  .drop-down a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .drop-down a:hover {background-color: black;}
+  
+  .portfolio-nav:hover .drop-down {display: block;}
+  
+  .portfolio-nav:hover .nav-button {background-color: #3e8e41;}
 
 h1 {
     color: var(--dark-green);
     font-size: 5rem;
     text-align: right;
     position: relative;
-    top: -80vh;
+    top: 20vh;
     right: 3vw;
     width: var(--doc-width);
     height: var(--doc-height);
@@ -177,6 +124,7 @@ h1 {
 
 main {
     width: var(--doc-width);
+    z-index: 1;
 }
 
 article {
@@ -202,6 +150,7 @@ h2 {
     background-color: var(--light-orange);
     color: var(--dark-orange);
     height: var(--doc-height) / 2;
+    z-index: 1;
 }
 
 #about article {
@@ -252,8 +201,8 @@ h2 {
     width: 33%;
     border: 0.5rem dashed var(--light-pink);
     margin: 1rem;
-    text-align: center;
-    list-style: none;
+    text-align: left;
+    padding-left: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -264,7 +213,7 @@ h2 {
 }
 
 #credentials-block ul {
-    list-style-type: none;
+    list-style-type: circle;
 }
 
 #credentials-block li {
