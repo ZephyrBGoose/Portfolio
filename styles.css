@@ -47,6 +47,13 @@
     
 }
 
+.welcome object {
+    position: absolute;
+    rotate: -34.5deg;
+    top: 0%;
+    left: 3%;
+}
+
 nav {
     font-family: var(--block-1);
 }
@@ -95,7 +102,7 @@ h1 {
     font-size: 5rem;
     text-align: right;
     position: relative;
-    top: 20vh;
+    top: 35vh;
     right: 3vw;
     width: var(--doc-width);
     height: var(--doc-height);
@@ -335,7 +342,21 @@ figcaption:visited {
 
 /*footer needs to change right and the end of laptop*/
 
+@media only screen and (max-width: 1220px) {
+    .welcome object {
+        rotate: -35deg;
+        top: 2%;
+        left: 2%;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
+
+    .welcome object {
+        rotate: -45deg;
+        top: 8%;
+        left: 1%;
+    }
     #about {
         font-size: 1rem;
     }
@@ -366,6 +387,25 @@ figcaption:visited {
 
     footer figure {
         padding-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    h1 {
+        font-size: 3rem;
+    }
+    #im {
+        font-size: 4rem;
+    }
+    #zephyr {
+        font-size: 5rem;
+    }
+    #goose {
+        font-size: 12rem;
+    }
+    footer section h3 span::after{
+        content: "\a";
+        white-space: pre;
     }
 }
 
@@ -438,11 +478,6 @@ figcaption:visited {
         width: 80%;
     }
 
-    footer section h3 span::after{
-        content: "\a";
-        white-space: pre;
-    }
-
     footer figure {
         width: 80%;
         margin: 0 auto;
@@ -450,5 +485,51 @@ figcaption:visited {
 
     #resume-thumbnail {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .welcome {
+        background-image: linear-gradient(to bottom, var(--light-blue) 25%, var(--light-green) 75%);
+    }
+
+    .welcome object {
+        rotate: 180deg;
+        top: -18%;
+        left: 18%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    h1 {
+        font-size: 2rem;
+        top: 50vh;
+    }
+    #im {
+        font-size: 3rem;
+    }
+    #zephyr {
+        font-size: 4rem;
+    }
+    #goose {
+        font-size: 8rem;
+    }
+    .welcome object {
+        top: -22%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #zephyr {
+        font-size: 3rem;
+    }
+    #goose {
+        font-size: 6rem;
+    }
+    .welcome object {
+        top: -25%;
     }
 }
