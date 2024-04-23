@@ -54,16 +54,15 @@
     left: 3%;
 }
 
-nav {
-    font-family: var(--block-1);
-}
 
 .nav-button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
     border: none;
+    font-family: var(--block-2);
   }
   
   .portfolio-nav {
@@ -72,30 +71,30 @@ nav {
     display: inline-block;
     text-align: left;
     display: flex;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: var(--block-2);
   }
   
   .drop-down {
     display: none;
     position: absolute;
-    background-color: gray;
+    background-color: var(--light-pink);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .drop-down a {
-    color: white;
+    color: var(--dark-pink);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .drop-down a:hover {background-color: black;}
+  .drop-down a:hover {background-color: white;}
   
   .portfolio-nav:hover .drop-down {display: block;}
   
-  .portfolio-nav:hover .nav-button {background-color: #3e8e41;}
+  .portfolio-nav:hover .nav-button {background-color: var(--light-purple);}
 
 h1 {
     color: var(--dark-green);
@@ -128,8 +127,6 @@ h1 {
     font-family: var(--hand-written-1);
     line-height: 0.75;
 }
-
-/*main*/
 
 main {
     width: var(--doc-width);
@@ -190,8 +187,6 @@ h2 {
     width: 100%;
 
 }
-
-/*about is good until tablet*/
 
 #certifications {
     background-color: var(--light-purple);
@@ -273,7 +268,6 @@ video {
     width: 100%;
 }
 
-/*Projects is good until mobile*/
 
 footer {
     background-color: var(--light-blue);
