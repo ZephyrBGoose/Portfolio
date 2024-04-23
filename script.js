@@ -15,16 +15,16 @@ const documentHeight = () => {
 
 // Scroll Animation
 
-const sections = document.querySelectorAll('article');
+const blocks = document.querySelectorAll('.block');
 
 function scrollAnimation() {
   const triggerBottom = window.innerHeight / 5 * 4;
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-    if(sectionTop < triggerBottom) {
-      section.classList.add('show');
+  blocks.forEach(block => {
+    const blockTop = block.getBoundingClientRect().top;
+    if(blockTop < triggerBottom) {
+      block.classList.add('show');
     } else {
-      section.classList.remove('show');
+      block.classList.remove('show');
     }
   })
 }

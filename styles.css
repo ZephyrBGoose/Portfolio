@@ -52,6 +52,8 @@
     rotate: -38.5deg;
     top: 1%;
     left: 3%;
+    width: 65%;
+    height: 65%;
 }
 
 #mobile {
@@ -150,7 +152,7 @@ main {
     z-index: 1;
 }
 
-article {
+.block {
     transform: translateX(400%) rotate(3turn);
     transition: transform 0.4s ease;
 }
