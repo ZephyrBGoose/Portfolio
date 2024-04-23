@@ -49,8 +49,8 @@
 
 .welcome object {
     position: absolute;
-    rotate: -34.5deg;
-    top: 0%;
+    rotate: -38.5deg;
+    top: 1%;
     left: 3%;
 }
 
@@ -102,11 +102,13 @@ h1 {
     font-size: 5rem;
     text-align: right;
     position: relative;
-    top: 35vh;
+    top: 25vh;
     right: 3vw;
     width: var(--doc-width);
     height: var(--doc-height);
     font-family: var(--hand-written-2);
+    z-index: 2;
+    background-image: linear-gradient(to bottom right, transparent 40%, var(--light-green) 40%);
 }
 
 #im {
@@ -348,6 +350,15 @@ figcaption:visited {
         top: 2%;
         left: 2%;
     }
+
+    h1 {
+        top: 5%;
+        background-image: linear-gradient(to bottom right, transparent 50%, var(--light-green) 50%);
+    }
+    
+    #zephyr {
+        font-size: 6rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -356,6 +367,15 @@ figcaption:visited {
         rotate: -45deg;
         top: 8%;
         left: 1%;
+    }
+    h1 {
+        top: 15%;
+    }
+    #zephyr {
+        font-size: 5rem;
+    }    
+    #goose {
+        font-size: 12rem;
     }
     #about {
         font-size: 1rem;
@@ -393,6 +413,7 @@ figcaption:visited {
 @media only screen and (max-width: 790px) {
     h1 {
         font-size: 3rem;
+        top: 30%;
     }
     #im {
         font-size: 4rem;
