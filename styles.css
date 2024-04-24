@@ -63,6 +63,7 @@
     font-size: 1rem;
     font-family: var(--block-2);
     position: fixed;
+    z-index: 3;
 }
 
 #mobile a {
@@ -180,7 +181,7 @@ h2 {
 
 #about article {
     display: flex;
-    
+    flex-direction: row;
 }
 
 #about p {
